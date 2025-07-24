@@ -6,6 +6,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Legal-Card</title>
     <style>
+        .main
+        {
+            background-color: bisque;
+        }
         .container
         {
             display: grid;
@@ -25,6 +29,13 @@
         .para
         {
             color:rgba(112, 112, 112, 1);
+        }
+        @media screen and (max-width:576px)
+        {
+            .main{
+                display: grid;
+                grid-template-columns:repeat(1,1fr);
+            }
         }
         
     </style>
